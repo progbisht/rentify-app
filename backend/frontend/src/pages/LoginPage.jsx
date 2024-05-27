@@ -31,7 +31,7 @@ export default function LoginPage() {
     }
 
     if(redirect){
-        window.location.reload()
+        
         return <Navigate to={'/'}/>
     }
 

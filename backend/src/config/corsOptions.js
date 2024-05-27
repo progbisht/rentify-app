@@ -1,5 +1,5 @@
 // allowed origin list
-const allowedOrigins = ['http://localhost:3000']
+const allowedOrigins = ['http://localhost:3000', 'https://rentify-app-wr4l.onrender.com']
 
 // cors options
 const corsOptions = {

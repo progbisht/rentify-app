@@ -45,7 +45,7 @@ export default function PlacePage(){
                                     <div className="w-32 h-32 flex-none">
                                         {
                                             item.place.photos.length > 0 && (
-                                                <img className="object-cover w-full h-full rounded-2xl" src={`http://localhost:4000/public/uploads/${item.place.photos[0]}`} alt="Place" />
+                                                <img className="object-cover w-full h-full rounded-2xl" src={`https://rentify-app-wr4l.onrender.com/public/uploads/${item.place.photos[0]}`} alt="Place" />
                                             )
                                         }
                                     </div>

@@ -22,7 +22,7 @@ export default function Indexpage(){
                     places.map(place => (
                         <Link to={'/place/' + place._id} key={place._id}>
                             <div className="bg-gray-500 rounded-2xl mb-2 flex">
-                                { place.photos?.[0] && (<img className="rounded-2xl object-cover aspect-square" src={"http://localhost:4000/public/uploads/" + place.photos?.[0]} alt=""/>)}
+                                { place.photos?.[0] && (<img className="rounded-2xl object-cover aspect-square" src={"https://rentify-app-wr4l.onrender.com/public/uploads/" + place.photos?.[0]} alt=""/>)}
                             </div>
                             <div>
                                 <h3 className="font-bold">{place.address}</h3>

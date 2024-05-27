@@ -95,7 +95,7 @@ export default function PlacePage() {
                         place.photos?.length > 0 && (
                             place.photos.map((photo) => (
                                 <div>
-                                    <img src={"http://localhost:4000/public/uploads/" + photo} alt=""/>
+                                    <img src={"https://rentify-app-wr4l.onrender.com/public/uploads/" + photo} alt=""/>
                                 </div>
                             ))
                         )
@@ -125,7 +125,7 @@ export default function PlacePage() {
                             {
                                 place.photos?.[0] && (
                                     <div>
-                                        <img className="object-cover cursor-pointer w-full h-full" src={"http://localhost:4000/public/uploads/" + place.photos?.[0]} alt="img"/>
+                                        <img className="object-cover cursor-pointer w-full h-full" src={"https://rentify-app-wr4l.onrender.com/public/uploads/" + place.photos?.[0]} alt="img"/>
                                     </div>
                                 )
                             }
@@ -133,13 +133,13 @@ export default function PlacePage() {
                         <div className="grid">
                             {
                                 place.photos?.[1] && (
-                                    <img className="aspect-square cursor-pointer object-cover" src={"http://localhost:4000/public/uploads/" + place.photos?.[1]} alt="img"/>
+                                    <img className="aspect-square cursor-pointer object-cover" src={"https://rentify-app-wr4l.onrender.com/public/uploads/" + place.photos?.[1]} alt="img"/>
                                 )
                             }
                             <div className="overflow-hidden">
                                 {
                                     place.photos?.[1] && (
-                                        <img className="aspect-square cursor-pointer object-cover relative top-2" src={"http://localhost:4000/public/uploads/" + place.photos?.[1]} alt="img"/>
+                                        <img className="aspect-square cursor-pointer object-cover relative top-2" src={"https://rentify-app-wr4l.onrender.com/public/uploads/" + place.photos?.[1]} alt="img"/>
                                     )
                                 }
                             </div>

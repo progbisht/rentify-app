@@ -3,7 +3,7 @@ import IndexPage from './pages/IndexPage';
 import LoginPage from './pages/LoginPage';
 import Layout from './Layout';
 import RegisterPage from './pages/RegisterPage';
-import axios from 'axios';
+// import axios from 'axios';
 import { UserContextProvider } from './UserContext';
 import ProfilePage from './pages/ProfilePage';
 import PlacePage from './pages/PlacePage';
@@ -13,8 +13,8 @@ import WishlistPage from './pages/WishlistPage';
 
 
 
-axios.defaults.baseURL = 'http://localhost:4000';
-axios.defaults.withCredentials = true
+// axios.defaults.baseURL = 'https://rentify-app-wr4l.onrender.com';
+// axios.defaults.withCredentials = true
 
 function App() {
   return (

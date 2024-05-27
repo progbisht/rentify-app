@@ -1,6 +1,6 @@
 require('dotenv').config()
 const mongoose = require('mongoose')
-const dbConnection = require('./src/config/dbConnection')
+const dbConnection = require('./config/dbConnection')
 const app = require('./app')
 
 dbConnection()

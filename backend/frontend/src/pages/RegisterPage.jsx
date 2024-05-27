@@ -6,7 +6,9 @@ import axios from "../api/axios"
 
 export default function RegisterPage() {
 
-    const [name, setName] = useState('');
+    const [firstName, setFirstName] = useState('');
+    const [lastName, setLastName] = useState('');
+    const [phone, setPhone] = useState('');
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
 
@@ -14,7 +16,9 @@ export default function RegisterPage() {
         e.preventDefault();
         try{
             await axios.post('/api/v1/users/register', {
-                name,
+                firstName,
+                lastName,
+                phone,
                 email,
                 password
             })
@@ -33,9 +37,21 @@ export default function RegisterPage() {
                 <form className="max-w-md mx-auto " onSubmit={handleRegister}>
                     <input 
                         type="text" 
-                        placeholder="John Doe" 
-                        value={name}
-                        onChange={e=>setName(e.target.value)}
+                        placeholder="John" 
+                        value={firstName}
+                        onChange={e=>setFirstName(e.target.value)}
+                    />
+                    <input 
+                        type="text" 
+                        placeholder="Doe" 
+                        value={lastName}
+                        onChange={e=>setLastName(e.target.value)}    
+                    />
+                    <input 
+                        type="number" 
+                        placeholder="9999999999" 
+                        value={phone}
+                        onChange={e=>setPhone(e.target.value)}    
                     />
                     <input 
                         type="email" 
